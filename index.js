@@ -1,3 +1,4 @@
+//File requirements
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -34,7 +35,7 @@ const questions = [
   }
 ];
 
-const engineerQuestions = [
+const engineerQs = [
   {
     type: "input",
     name: "name",
@@ -57,7 +58,7 @@ const engineerQuestions = [
   }
 ];
 
-const internQuestions = [
+const internQs = [
   {
     type: "input",
     name: "name",
@@ -80,7 +81,7 @@ const internQuestions = [
   }
 ];
 
-const continueOrEnd = [
+const addMore = [
   {
     type: "checkbox",
     message: "Add more members?",
@@ -89,7 +90,7 @@ const continueOrEnd = [
   }
 ]
 
-const typeOfMember = [
+const memberType = [
   {
     type: "checkbox",
     message: "What type of team member would you like to add?",
@@ -97,3 +98,18 @@ const typeOfMember = [
     choices: ["engineer","intern"]  
   }
 ]
+
+//Inquirer prompt
+inquirer
+  .prompt(questions)
+  .then(function(user) {
+    const templateMainFile = fs.readFileSync(`./templates/main.html`,  { encoding: 'utf8' });
+
+    //First option is manager
+    const manager = new Manager (user.name , user.id , user.email , user.officeNumber);
+
+    let team = renderHTML(manager);
+    let proceed = true;
+    //adding team member to main template file
+    AddorStop(proceed,user.member[0],team,templateMainFile);
+});
