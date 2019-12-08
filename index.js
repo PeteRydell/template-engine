@@ -145,13 +145,10 @@ async function AddorStop (proceed,chosenMember,team, templateMainFile) {
         let engineerNew = new Engineer(engineer.name , engineer.id, engineer.email,engineer.github);
         let engineerCard = renderHTML(engineerNew);
         team = team + engineerCard
-        console.log(team);
         let nextMove = await inquirer.prompt(addMore);
-        console.log(nextMove);
         
         if(nextMove.choice[0]==="false"){
             proceed = false;
-            console.log(proceed,"THIS IS PROCEED STATUS");
             let mainTemplate = templateMainFile.replace('{{ team }}', team);
             fs.writeFileSync("index.html",mainTemplate);
         } else if (nextMove.choice[0]==="true"){
@@ -164,7 +161,6 @@ async function AddorStop (proceed,chosenMember,team, templateMainFile) {
           let internNew = new Intern(intern.name , intern.id, intern.email,intern.school);
           let internCard = renderHTML(internNew);
           team = team + internCard
-          console.log(team);
         let nextMove1 = await inquirer.prompt(addMore);
          
             if(nextMove1.choice[0]==="false"){
