@@ -1,0 +1,12 @@
+.employee-card {
+    margin: 10px;
+}
+
+.card-header {
+    background-color: black;
+    color: white;
+}
+
+.card-body {
+    background-color: #F6F7F8;
+}
