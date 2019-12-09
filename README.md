@@ -2,7 +2,7 @@
 
 The employee template is an app for storing emplpyee roles and information:
 
-<img width="1029" alt="Screen Shot 2019-12-07 at 8 28 14 PM" src="https://user-images.githubusercontent.com/31483933/70384237-d15ed880-1930-11ea-8458-b8cb7e6a62fe.png">
+<img width="935" alt="Screen Shot 2019-12-08 at 7 04 50 PM" src="https://user-images.githubusercontent.com/31483933/70404102-cc139380-19ed-11ea-8ed4-10a78ee24935.png">
 
 Each employee's ID card is dynamically generated based on terminal inputs and then added to the index file. Roles include:
 
