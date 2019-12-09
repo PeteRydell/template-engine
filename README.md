@@ -16,7 +16,7 @@ Engineer
 
 Intern
 
-<img width="290" alt="Screen Shot 2019-12-07 at 8 28 54 PM" src="https://user-images.githubusercontent.com/31483933/70384244-dde33100-1930-11ea-90c9-a30767a1e8a7.png">
+<img width="294" alt="Screen Shot 2019-12-08 at 7 20 26 PM" src="https://user-images.githubusercontent.com/31483933/70404782-f23a3300-19ef-11ea-9ca0-3288ef3a1070.png">
 
 When running the index.js file in the terminal, users are first presented with an input for a company manager:
 
