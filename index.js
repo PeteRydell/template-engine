@@ -10,26 +10,26 @@ const questions = [
   {
     type: "input",
     name: "name",
-    message: "What is the manager's name?"
+    message: "Enter manager's name"
   },
   {
     type: "input",
-    message: "What the manager's employee id?",
+    message: "Enter manager's employee id",
     name: "id",
   },
   {
     type: "input",
-    message: "What is the manger's email?",
+    message: "Enter manager's email",
     name: "email", 
   },
   {
     type: "input",
-    message: "What is the manger's office number?",
+    message: "Enter manager's office number",
     name: "officeNumber", 
   },
   {
     type: "checkbox",
-    message: "What type of team member would you like to add?",
+    message: "What type of additional team member would you like to add?",
     name: "member", 
     choices: ["engineer","intern"]
   }
@@ -39,21 +39,21 @@ const engineerQs = [
   {
     type: "input",
     name: "name",
-    message: "What is the employee's name?"
+    message: "Enter employee's name"
   },
   {
     type: "input",
-    message: "What is the employee id?",
+    message: "Enter employee id",
     name: "id",
   },
   {
     type: "input",
-    message: "What is the employee's email?",
+    message: "Enter employee's email",
     name: "email", 
   },
   {
     type: "input",
-    message: "What is the employee's github username?",
+    message: "Enter employee's github username",
     name: "github", 
   }
 ];
@@ -62,21 +62,21 @@ const internQs = [
   {
     type: "input",
     name: "name",
-    message: "What is the employee's name?"
+    message: "Enter employee's name"
   },
   {
     type: "input",
-    message: "What is the employee id?",
+    message: "Enter employee id",
     name: "id",
   },
   {
     type: "input",
-    message: "What is the employee's email?",
+    message: "Enter employee's email",
     name: "email", 
   },
   {
     type: "input",
-    message: "Where does the employee attend school?",
+    message: "Enter employee's school",
     name: "school", 
   }
 ];
@@ -94,7 +94,7 @@ const memberType = [
   {
     type: "checkbox",
     message: "What type of team member would you like to add?",
-    name: "member1", 
+    name: "memberNew", 
     choices: ["engineer","intern"]  
   }
 ]
@@ -153,7 +153,7 @@ async function AddorStop (proceed,chosenMember,team, templateMainFile) {
             fs.writeFileSync("index.html",mainTemplate);
         } else if (nextMove.choice[0]==="true"){
           const newMember = await inquirer.prompt(typeOfMember);
-          chosenMember = newMember.member1[0];
+          chosenMember = newMember.memberNew[0];
         }
         break;  
         case "intern":
@@ -168,8 +168,8 @@ async function AddorStop (proceed,chosenMember,team, templateMainFile) {
               let tempMain = templateMainFile.replace('{{ team }}', team);
               fs.writeFileSync("index.html",tempMain);
             } else if (nextMove1.choice[0]==="true"){
-              const newMember1 = await inquirer.prompt(memberType);
-              chosenMember = newMember1.member1[0];
+              const newmemberNew = await inquirer.prompt(memberType);
+              chosenMember = newmemberNew.memberNew[0];
             }
         break;
       }
