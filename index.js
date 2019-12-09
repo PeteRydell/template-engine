@@ -140,7 +140,6 @@ async function AddorStop (proceed,chosenMember,team, templateMainFile) {
       switch(chosenMember){
         case "engineer":
         const engineer = await inquirer.prompt(engineerQs);
-        console.log(engineer);
         
         let engineerNew = new Engineer(engineer.name , engineer.id, engineer.email,engineer.github);
         let engineerCard = renderHTML(engineerNew);
