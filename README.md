@@ -29,15 +29,13 @@ The user can input values including ID, email and phone number and upon completi
 
 <img width="554" alt="Screen Shot 2019-12-08 at 7 31 25 PM" src="https://user-images.githubusercontent.com/31483933/70405731-18150700-19f3-11ea-8587-72b024dfc130.png">
 
-<img width="561" alt="Screen Shot 2019-12-08 at 7 32 50 PM" src="https://user-images.githubusercontent.com/31483933/70405754-27945000-19f3-11ea-97c5-70ecd916672c.png">
 
 If the user opts to add an additional team member, they are prompted with additional requests for information which is then added to an employee or intern ID card. They can add as many individuals as desired with the end results altering template html and replacing placeholders in the index file:
 
-<img width="567" alt="Screen Shot 2019-12-08 at 7 31 08 PM" src="https://user-images.githubusercontent.com/31483933/70405471-2f072980-19f2-11ea-9589-9bbb770cc5aa.png">
-
+<img width="561" alt="Screen Shot 2019-12-08 at 7 32 50 PM" src="https://user-images.githubusercontent.com/31483933/70405754-27945000-19f3-11ea-97c5-70ecd916672c.png">
 
 
 End results will vary from the original template file:
 
-
+<img width="857" alt="Screen Shot 2019-12-08 at 7 57 13 PM" src="https://user-images.githubusercontent.com/31483933/70406311-26642280-19f5-11ea-90ca-97c83d4c764b.png">
 
